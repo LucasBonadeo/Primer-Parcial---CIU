@@ -1,13 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head id="home">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo-virbela.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
     <title>Virbela</title>
   </head>
-  <body>
-    <script src="script.js"></script>
+  <body class="light">
+    <header>
+      <nav>
+        <div class="contenedor-nav">
+          <!-- <button class="button-temario">Temario</button>
+          <div class="contenedor-temario">
+            <a href="#metaverso">Metaverso</a>
+            <a href="#mundos-virtuales">Mundos virtuales</a>
+            <a href="#tecnologias">Nuevas tecnologías</a>
+            <a href="#imagenes">Galeria</a>
+          </div> -->
+          <a href="register.html">Registro</a>
+        </div>
+        <div class="contenedor-nav">
+          <div class="contenedor-redes">
+            <a href="https://www.instagram.com/virbelahq/" target="_blank">
+              <img src="assets/img/icono-instagram.svg" alt="" />
+            </a>
+            <a href="https://twitter.com/VirbelaHQ" target="_blank">
+              <img src="assets/img/icono-twitter.svg" alt="" />
+            </a>
+            <a href="https://www.facebook.com/Virbela/" target="_blank">
+              <img src="assets/img/icono-facebook.svg" alt="" />
+            </a>
+          </div>
+          <div id="contenedor-ligh_dark_mode">
+            <input type="checkbox" id="toggle" />
+            <label class="toggle" for="toggle">
+              <i class="bx bxs-sun"></i>
+              <i class="bx bx-moon"></i>
+              <span class="ball"></span>
+            </label>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="contenedor-hero-image">
+      <h1>EVENTO VIRBELA METAVERSO 2023</h1>
+      <h2>El Metaverso ya está aquí.</h2>
+      <p>¿De que vamos a hablar?</p>
+      <p>¡Quiero ir!</p>
+    </div>
+    <section id="metaverso">
+      <h2>Metaverso</h2>
+      <p>
+        En muchos sentidos, el Metaverso ya está aquí. Pero, ¿Qué es el
+        Metaverso? ¿Qué papel jugará en el futuro del trabajo?
+      </p>
+      <video autoplay muted loop>
+        <source src="assets/img/videos/video-multiverso.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    <section id="mundos-virtuales">
+      <h2>El Metaverso y los mundos virtuales</h2>
+      <p>
+        Los mundos virtuales como Roblox, Minecraft y Fortnite tienen miles de
+        millones de usuarios y economías que rivalizan con países pequeños. ¿Por
+        qué el Metaverso y los mundos virtuales se han convertido en un tema más
+        relevante hoy que nunca?
+      </p>
+    </section>
+    <section id="tecnologias">
+      <h2>Tecnologías</h2>
+      <p>
+        ¿Cuáles son los avances tecnológicos que aún se necesitan para fomentar
+        la adopción masiva?
+      </p>
+    </section>
+    <section id="imagenes">
+      <h2>Galeria</h2>
+    </section>
+    <footer>
+      <div class="contenedor-contacto">
+        <h4>Teléfono</h4>
+        <a href="tel:+1 (844) 714-4210">1 (844) 714-4210</a>
+        <h4>Email</h4>
+        <a href="mailto:media@virbela.com">media@virbela.com</a>
+        <h4>Redes Sociales</h4>
+        <div class="contenedor-redes">
+          <a href="https://www.instagram.com/virbelahq/" target="_blank">
+            <img src="assets/img/icono-instagram.svg" alt="" />
+          </a>
+          <a href="https://twitter.com/VirbelaHQ" target="_blank">
+            <img src="assets/img/icono-twitter.svg" alt="" />
+          </a>
+          <a href="https://www.facebook.com/Virbela/" target="_blank">
+            <img src="assets/img/icono-facebook.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <a href="index.html">
+        <img src="assets/img/logo-virbela.png" alt="" />
+        <p>HOME</p>
+      </a>
+      <div class="contenedor-mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5615.188205749211!2d-122.46323254638543!3d48.744638001376124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485962ef2458717%3A0xd57a9ca9cd39e0f0!2sBellingham%2C%20Washington%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1683842665582!5m2!1ses!2sar"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </footer>
+    <script src="assets/script.js"></script>
   </body>
 </html>

@@ -10,115 +10,253 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="assets/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Virbela</title>
   </head>
-  <body class="light">
+  <body>
     <header>
-      <nav>
-        <div class="contenedor-nav">
-          <!-- <button class="button-temario">Temario</button>
-          <div class="contenedor-temario">
-            <a href="#metaverso">Metaverso</a>
-            <a href="#mundos-virtuales">Mundos virtuales</a>
-            <a href="#tecnologias">Nuevas tecnologías</a>
-            <a href="#imagenes">Galeria</a>
-          </div> -->
-          <a href="register.html">Registro</a>
-        </div>
-        <div class="contenedor-nav">
-          <div class="contenedor-redes">
-            <a href="https://www.instagram.com/virbelahq/" target="_blank">
-              <img src="assets/img/icono-instagram.svg" alt="" />
-            </a>
-            <a href="https://twitter.com/VirbelaHQ" target="_blank">
-              <img src="assets/img/icono-twitter.svg" alt="" />
-            </a>
-            <a href="https://www.facebook.com/Virbela/" target="_blank">
-              <img src="assets/img/icono-facebook.svg" alt="" />
-            </a>
-          </div>
-          <div id="contenedor-ligh_dark_mode">
-            <input type="checkbox" id="toggle" />
-            <label class="toggle" for="toggle">
-              <i class="bx bxs-sun"></i>
-              <i class="bx bx-moon"></i>
-              <span class="ball"></span>
-            </label>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light rounded"
+        id="nav-bar"
+      >
+        <div class="container-fluid">
+          <!-- <img src="assets/img/logo-virbela.png" class="img-fluid" alt="" /> -->
+
+          <a class="navbar-brand" href="#">Virbela</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="register.html"
+                  >Ingresar</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Temario Evento
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#metaverso">Metaverso</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#mundos-virtuales"
+                      >Mundos virtuales</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#tecnologias"
+                      >Nuevas tecnologías</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#footer"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+            <div class="contenedor-redes">
+              <a href="https://www.instagram.com/virbelahq/" target="_blank">
+                <img src="assets/img/icono-instagram.svg" alt="" />
+              </a>
+              <a href="https://twitter.com/VirbelaHQ" target="_blank">
+                <img src="assets/img/icono-twitter.svg" alt="" />
+              </a>
+              <a href="https://www.facebook.com/Virbela/" target="_blank">
+                <img src="assets/img/icono-facebook.svg" alt="" />
+              </a>
+            </div>
+            <button class="btn" id="darkModeButton">
+              <img
+                src="assets/img/moon-solid-24.png"
+                class="imagenNav"
+                id="img-modo-oscuro"
+              />
+            </button>
           </div>
         </div>
       </nav>
     </header>
     <div class="contenedor-hero-image">
-      <h1>EVENTO VIRBELA METAVERSO 2023</h1>
-      <h2>El Metaverso ya está aquí.</h2>
-      <p>¿De que vamos a hablar?</p>
-      <p>¡Quiero ir!</p>
+      <div class="contenedor-opacidad">
+        <h1 class="display-3 text-center">
+          <strong>EVENTO VIRBELA METAVERSO 2023</strong>
+        </h1>
+        <h2 class="display-5 text-center">El Metaverso ya está aquí.</h2>
+        <a href="register.html" class="rotate-360">¡Quiero ir!</a>
+      </div>
+      <img src="assets/img/future-3d-2.png" alt="" />
     </div>
-    <section id="metaverso">
-      <h2>Metaverso</h2>
-      <p>
-        En muchos sentidos, el Metaverso ya está aquí. Pero, ¿Qué es el
-        Metaverso? ¿Qué papel jugará en el futuro del trabajo?
-      </p>
-      <video autoplay muted loop>
-        <source src="assets/img/videos/video-multiverso.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </section>
-    <section id="mundos-virtuales">
-      <h2>El Metaverso y los mundos virtuales</h2>
-      <p>
-        Los mundos virtuales como Roblox, Minecraft y Fortnite tienen miles de
-        millones de usuarios y economías que rivalizan con países pequeños. ¿Por
-        qué el Metaverso y los mundos virtuales se han convertido en un tema más
-        relevante hoy que nunca?
-      </p>
-    </section>
-    <section id="tecnologias">
-      <h2>Tecnologías</h2>
-      <p>
-        ¿Cuáles son los avances tecnológicos que aún se necesitan para fomentar
-        la adopción masiva?
-      </p>
-    </section>
-    <section id="imagenes">
-      <h2>Galeria</h2>
-    </section>
-    <footer>
-      <div class="contenedor-contacto">
-        <h4>Teléfono</h4>
-        <a href="tel:+1 (844) 714-4210">1 (844) 714-4210</a>
-        <h4>Email</h4>
-        <a href="mailto:media@virbela.com">media@virbela.com</a>
-        <h4>Redes Sociales</h4>
-        <div class="contenedor-redes">
-          <a href="https://www.instagram.com/virbelahq/" target="_blank">
-            <img src="assets/img/icono-instagram.svg" alt="" />
-          </a>
-          <a href="https://twitter.com/VirbelaHQ" target="_blank">
-            <img src="assets/img/icono-twitter.svg" alt="" />
-          </a>
-          <a href="https://www.facebook.com/Virbela/" target="_blank">
-            <img src="assets/img/icono-facebook.svg" alt="" />
-          </a>
+    <main id="main-principal">
+      <section id="metaverso">
+        <div class="row align-items-center">
+          <div class="container-fluid col-md-10 col-lg-5">
+            <article data-aos="fade-right">
+              <h2>METAVERSO</h2>
+              <p class="fs-4">
+                En muchos sentidos, el Metaverso ya está aquí. Pero, ¿Qué es el
+                Metaverso? ¿Qué papel jugará en el futuro del trabajo?
+              </p>
+            </article>
+          </div>
+          <div class="container-fluid col-md-10 col-lg-5">
+            <video data-aos="fade-left" autoplay muted loop>
+              <source
+                src="assets/img/videos/video-multiverso.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+      <section id="mundos-virtuales">
+        <div class="row align-items-center">
+          <div class="col-md-12 col-lg-4 col-xl-4">
+            <img
+              data-aos="fade-right"
+              class="img-fluid"
+              src="assets/img/fortnite1.jfif"
+              alt=""
+            />
+          </div>
+          <div class="container-fluid col-md-12 col-lg-4 col-xl-4">
+            <article
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
+              <h2>EL METAVERSO Y LOS MUNDOS VIRTUALES</h2>
+              <p class="fs-4">
+                Los mundos virtuales como Roblox, Minecraft y Fortnite tienen
+                miles de millones de usuarios y economías que rivalizan con
+                países pequeños. ¿Por qué el Metaverso y los mundos virtuales se
+                han convertido en un tema más relevante hoy que nunca?
+              </p>
+            </article>
+          </div>
+          <div class="col-md-12 col-lg-4 col-xl-4">
+            <img
+              data-aos="fade-left"
+              src="assets/img/minecraft-header.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="tecnologias">
+        <div class="row align-items-center">
+          <div class="col-md-12 col-lg-4 col-xl-4">
+            <img
+              data-aos="fade-left"
+              class="img-fluid"
+              src="assets/img/experiencias-realidad-virtual-evadirte.jpg"
+              alt=""
+            />
+          </div>
+          <div class="container-fluid col-md-12 col-lg-4 col-xl-4">
+            <article
+              data-aos="flip-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
+              <h2>NUEVAS TECNOLOGÍAS</h2>
+              <p class="fs-4">
+                ¿Cuáles son los avances tecnológicos que aún se necesitan para
+                fomentar la adopción masiva?
+              </p>
+            </article>
+          </div>
+          <div class="col-md-12 col-lg-4 col-xl-4">
+            <img
+              data-aos="fade-right"
+              class="img-fluid"
+              src="assets/img/tecno-vr.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="container-fluid">
+      <div class="row">
+        <div
+          class="contenedor-home rotate-360 d-inline-block col-12 text-center"
+        >
+          <a href="index.html" class="home rotate-360">Home</a>
+        </div>
+        <div class="container row align-items-center justify-content-evenly">
+          <div class="contenedor-contacto col-md-10 col-lg-5">
+            <h4>Teléfono</h4>
+            <a href="tel:+1 (844) 714-4210">1 (844) 714-4210</a>
+            <h4>Email</h4>
+            <a href="mailto:media@virbela.com">media@virbela.com</a>
+            <h4>Redes Sociales</h4>
+            <div class="contenedor-redes">
+              <a href="https://www.instagram.com/virbelahq/" target="_blank">
+                <img src="assets/img/icono-instagram.svg" alt="" />
+              </a>
+              <a href="https://twitter.com/VirbelaHQ" target="_blank">
+                <img src="assets/img/icono-twitter.svg" alt="" />
+              </a>
+              <a href="https://www.facebook.com/Virbela/" target="_blank">
+                <img src="assets/img/icono-facebook.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="contenedor-iframe col-md-10 col-lg-5">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5615.188205749211!2d-122.46323254638543!3d48.744638001376124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485962ef2458717%3A0xd57a9ca9cd39e0f0!2sBellingham%2C%20Washington%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1683842665582!5m2!1ses!2sar"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </div>
-      <a href="index.html">
-        <img src="assets/img/logo-virbela.png" alt="" />
-        <p>HOME</p>
-      </a>
-      <div class="contenedor-mapa">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5615.188205749211!2d-122.46323254638543!3d48.744638001376124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485962ef2458717%3A0xd57a9ca9cd39e0f0!2sBellingham%2C%20Washington%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1683842665582!5m2!1ses!2sar"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out-back",
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>

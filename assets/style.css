@@ -1,1 +1,267 @@
+:root {
+  --primary-color: #69916e;
+  --second-color: #0c3b2e;
+  --third-color: #f5b202;
+  --enlaces-button-color-: #c02177;
+  --section-background: #3b3566;
+  --dark-background-color: #232332;
+  --font: "Barlow Condensed", sans-serif;
+}
 
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.dark-mode {
+  background-color: #232332;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  box-shadow: 2px -6px 7px 12px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px -6px 7px 12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px -6px 7px 12px rgba(0, 0, 0, 0.75);
+}
+
+.contenedor-redes {
+  display: flex;
+  align-items: center;
+}
+
+.contenedor-redes a {
+  padding: 0rem 1rem;
+}
+
+.contenedor-hero-image {
+  position: relative;
+  width: 100%;
+  height: 95vh;
+  background-image: url("img/Virbela_New_campus.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-hero-image a,
+.home {
+  text-decoration: none;
+  z-index: 1;
+  background-color: #c02177;
+  padding: 1rem 2rem;
+  color: antiquewhite;
+  margin-top: 2rem;
+  box-shadow: 1px 2px 37px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 2px 37px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 2px 37px 0px rgba(0, 0, 0, 0.75);
+}
+
+.rotate-360 {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.rotate-360:hover {
+  color: antiquewhite;
+  transform: rotateZ(360deg);
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+}
+
+.contenedor-hero-image img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+h1,
+h2 {
+  color: antiquewhite;
+  text-shadow: 7px 2px 9px rgba(0, 0, 0, 1);
+  -webkit-text-stroke: 1px #1d1d1d;
+}
+
+.contenedor-opacidad {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: RGBA(0, 0, 0, 0.46);
+}
+
+main {
+  width: 100%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: aliceblue;
+  box-shadow: 0px 0px 26px 23px rgba(0, 0, 0, 0.75) inset;
+  -webkit-box-shadow: 1px -5px 37px 0px rgba(0, 0, 0, 0.75) inset;
+  -moz-box-shadow: 1px -5px 37px 0px rgba(0, 0, 0, 0.75) inset;
+}
+
+section {
+  padding: 2rem 2rem;
+  margin: 0.5rem;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+  background-color: var(--section-background);
+  border-radius: 47px 47px 47px 47px;
+  -webkit-border-radius: 47px 47px 47px 47px;
+  -moz-border-radius: 47px 47px 47px 47px;
+  box-shadow: 1px 2px 37px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 2px 37px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 2px 37px 0px rgba(0, 0, 0, 0.75);
+}
+
+section video {
+  width: 100%;
+  border-radius: 172px 36px 90px 91px;
+  -webkit-border-radius: 172px 36px 90px 91px;
+  -moz-border-radius: 172px 36px 90px 91px;
+  margin: 2rem 0rem;
+}
+
+section img {
+  border-radius: 20px;
+}
+
+article {
+  padding: 6rem 3rem;
+  margin: 2rem 0rem;
+  background-color: #734b98;
+  border-radius: 49px 155px 85px 94px;
+  -webkit-border-radius: 49px 155px 85px 94px;
+  -moz-border-radius: 49px 155px 85px 94px;
+}
+
+article p,
+h2 {
+  text-align: center;
+  color: antiquewhite;
+}
+
+article h2 {
+  padding-bottom: 1rem;
+}
+
+article p {
+  padding-top: 1rem;
+  border-top: 10px groove #c02177;
+  border-bottom: 10px none #ff6550;
+  text-shadow: -1px 0px 22px rgba(0, 0, 0, 0.6);
+}
+
+footer {
+  color: antiquewhite;
+  background-color: RGBA(0, 0, 0, 0.9);
+  padding: 4rem 2rem;
+}
+
+.contenedor-home {
+  margin-bottom: 4rem;
+}
+
+.contenedor-contacto {
+  border: 1px white solid;
+  text-align: center;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.contenedor-contacto a {
+  width: 100%;
+  border-top: 1px #c02177 solid;
+  text-decoration: none;
+  color: antiquewhite;
+  padding: 0.5rem 0rem;
+}
+
+.contenedor-contacto h4 {
+  padding: 0.5rem 0rem;
+}
+
+.contenedor-contacto .contenedor-redes a img {
+  padding: 0.5rem 0rem;
+}
+
+.enlace-home a {
+  text-decoration: none;
+  z-index: 1;
+  background-color: #c02177;
+  padding: 1rem 2rem;
+  color: antiquewhite;
+  box-shadow: 1px 2px 37px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 2px 37px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 2px 37px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contenedor-iframe iframe {
+  border-radius: 10px;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: antiquewhite;
+  width: 60%;
+}
+
+.form div label {
+  margin: 1rem;
+}
+
+.form-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-btn-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0rem;
+}
+
+.form-btn-item button {
+  margin: 0rem 1rem;
+  background-color: var(--enlaces-button-color-);
+}
+
+.contenedor-hero-image-form {
+  height: auto;
+  background-image: url("img/Virbela_New_campus.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-attachment: fixed;
+}

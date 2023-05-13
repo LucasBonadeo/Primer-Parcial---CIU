@@ -12,7 +12,6 @@ html {
   box-sizing: border-box;
   font-family: var(--font);
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {

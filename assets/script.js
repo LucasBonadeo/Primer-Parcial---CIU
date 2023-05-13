@@ -1,7 +1,7 @@
 const button = document.getElementById("darkModeButton");
 const nav = document.getElementById("nav-bar");
-const img = document.getElementById("img-modo-oscuro");
-const imgRegistro = document.getElementById("img-modo-oscuro-registro");
+const img = document.getElementById("img-modo-oscuro"); /* 
+const imgRegistro = document.getElementById("img-modo-oscuro-registro"); */
 const main = document.getElementById("main-principal");
 let darkMode = false;
 
@@ -13,7 +13,6 @@ button.addEventListener("click", function () {
     nav.classList.toggle("navbar-dark");
     main.classList.toggle("dark-mode");
     img.src = "./assets/img/sun-solid-24.png";
-    imgRegistro.src = "./assets/img/sun-solid-24.png";
     darkMode = true;
   } else {
     nav.classList.toggle("bg-light");
@@ -22,7 +21,6 @@ button.addEventListener("click", function () {
     nav.classList.remove("navbar-dark");
     main.classList.remove("dark-mode");
     img.src = "./assets/img/moon-solid-24.png";
-    imgRegistro.src = "./assets/img/moon-solid-24.png";
     darkMode = false;
   }
 });

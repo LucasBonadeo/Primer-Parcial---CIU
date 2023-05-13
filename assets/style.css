@@ -1,8 +1,5 @@
 :root {
-  --primary-color: #69916e;
-  --second-color: #0c3b2e;
-  --third-color: #f5b202;
-  --enlaces-button-color-: #c02177;
+  --enlaces-button-color: #c02177;
   --section-background: #3b3566;
   --dark-background-color: #232332;
   --font: "Barlow Condensed", sans-serif;
@@ -73,7 +70,7 @@ nav img {
 .home {
   text-decoration: none;
   z-index: 1;
-  background-color: #c02177;
+  background-color: var(--enlaces-button-color);
   padding: 1rem 2rem;
   color: antiquewhite;
   margin-top: 2rem;
@@ -175,7 +172,7 @@ article h2 {
 
 article p {
   padding-top: 1rem;
-  border-top: 10px groove #c02177;
+  border-top: 10px groove var(--enlaces-button-color);
   border-bottom: 10px none #ff6550;
   text-shadow: -1px 0px 22px rgba(0, 0, 0, 0.6);
 }
@@ -199,7 +196,7 @@ footer {
 
 .contenedor-contacto a {
   width: 100%;
-  border-top: 1px #c02177 solid;
+  border-top: 1px var(--enlaces-button-color) solid;
   text-decoration: none;
   color: antiquewhite;
   padding: 0.5rem 0rem;
@@ -216,7 +213,7 @@ footer {
 .enlace-home a {
   text-decoration: none;
   z-index: 1;
-  background-color: #c02177;
+  background-color: var(--enlaces-button-color);
   padding: 1rem 2rem;
   color: antiquewhite;
   box-shadow: 1px 2px 37px 0px rgba(0, 0, 0, 0.75);
@@ -259,7 +256,7 @@ footer {
 
 .form-btn-item button {
   margin: 0rem 1rem;
-  background-color: var(--enlaces-button-color-);
+  background-color: var(--enlaces-button-color);
 }
 
 .contenedor-hero-image-form {
